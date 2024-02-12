@@ -3,105 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros eletricos</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        #header {
-            background-color: #0260bf; 
-            color: #ffffff;
-            padding: 20px 0;
-        }
-       
-        #footer {
-            background-color: #0260bf;  
-            color: #ffffff; 
-            padding: 20px 0; 
-        }
-        .nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav-item {
-            display: inline;
-            margin-right: 10px;
-        }
-        .nav-link {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .nav-link:hover {
-            color: #000000;
-        }
-        #main {
-            padding: 50px 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Portfolio</title>
+    
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-            <h1>Compre carros eletricos</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+    <section class="row">
+        <nav class="sidebar">
+            <button class="lang">
+                <span class="material-symbols-outlined"> language </span>
+            </button>
+           
+            <img class="avatar" src="https://media.licdn.com/dms/image/C4D03AQEsDCLD70_fQw/profile-displayphoto-shrink_800_800/0/1629392913608?e=1713398400&v=beta&t=kUwHMAdQq9s8hACW1F86pCyKbQsZGvUFAb6yZu3fF-c" alt="Carro eletrico">
+            <h1 class="headline">User Experience, Front-end Pleno & Focusing in Mobile devices</h1>
+            <p class="label" id="desc">Atualmente, estou residindo e exercendo minha profissão em Jaraguá do Sul, Santa Catarina. Atuo como Especialista em Experiência do Usuário e Desenvolvedor Front-end na S2Mangás, onde sou parte integrante da equipe de desenvolvimento mobile. Meu trabalho é centrado em oferecer a mais refinada experiência ao usuário, capturando a atenção de diversos públicos através de uma interface intuitiva e microinterações encantadoras.</p>
+            
+                    <li class="row">
+                        <a class="nav-link" href="#">Dribbble</a>
+                        <span class="material-symbols-outlined arrow">arrow_outward</span>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Modelos</a>
+                    <li class="row">
+                        <a class="nav-link" href="#">Linkedin</a>
+                        <span class="material-symbols-outlined arrow">arrow_outward</span>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Entrar</a>
+                    <li class="row">
+                        <a class="nav-link" href="#">Instagram</a>
+                        <span class="material-symbols-outlined arrow">arrow_outward</span>
                     </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container-md" id="main">
-        <section class="card">
-            <div class="card-header">
-                <h2>Valores acessiveis</h2>
-            </div>
-            <div class="card-body">
-            <p>
-                Compre carros novos e com um preço acessivel e que cabem no seu bolso.
-            </p>
-            <button type="button" class="btn btn-primary">Ver preços</button>
-            </div>
-        </section>
+                <div class="col">
+                    <button type="button" class="open">Open to work</button>
+                    <button type="button" class="contact">Get in touch</button>
+                </div>
+            
+            <footer style="text-align: center; margin-top: 20px; ">
+                    <span style="font-family: 'Medium';">&copy; 2024 João Sousa</span>
+            </footer>
+        </nav>
+        <div class="content">
 
-        <section class="card" style="margin: 20px 0px">
-            <div class="card-header">
-                <h2>Modernos e elegantes</h2>
-            </div>
-            <div class="card-body">
-            <p>
-                Nossos carros são modernos e elegantes, com um design inovador e que chama a atenção.
-            </p>
-            <button type="button" class="btn btn-primary">Ver em 3D</button>
-            </div>
-        </section>
 
-        <section class="card">
-            <div class="card-header">
-            <h2>Velozes e com torque instantaneo</h2>
+
+
+            <section class="card">
+                <img class="img_poster" src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center" alt="Carro eletrico">
+                <div class="row" style="align-items: center;">
+                    <h3>App Store splash</h3>
+                    <span>UI</span>
+                </div>
+            </section>
+            
+            <section class="card">
+                <img class="img_poster" src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center" alt="Carro eletrico">
+                <div class="row" style="align-items: center;">
+                    <h3>App Store splash</h3>
+                    <span>UI</span>
+                </div>
+            </section>
+            
+            
+            
+            <section class="card">
+                <img class="img_poster" src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center" alt="Carro eletrico">
+                <div class="row" style="align-items: center;">
+                    <h3>App Store splash</h3>
+                    <span>UI</span>
+                </div>
+            </section>
+
+            
+            
+            <section class="card">
+                <img class="img_poster" src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center" alt="Carro eletrico">
+                <div class="row" style="align-items: center;">
+                    <h3>App Store splash</h3>
+                    <span>UI</span>
+                </div>
+            </section>
+
+            
+            
+            <section class="card">
+                <img class="img_poster" src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center" alt="Carro eletrico">
+                <div class="row" style="align-items: center;">
+                    <h3>App Store splash</h3>
+                    <span>UI</span>
+                </div>
+            </section>
+         
+            
+            <div class="main">
+                <div class="box"></div>
             </div>
-            <div class="card-body">
-            <p>
-                Nossos carros são velozes e com um torque instantaneo, proporcionando uma experiencia unica. De 0 a 100 em 3 segundos.
-            </p>
-            <button type="button" class="btn btn-primary">Ver resultado</button>
-            </div>
-        </section>
-    </div>
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2024 Carros Eletricos</p>
+       
         </div>
-    </footer>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+   
+    <script>
+
+        const box = document.querySelector('.box');
+        const main = document.querySelector('.main');
+        //gsap.registryPlugin(ScrollTrigger);
+        gsap.to(".box", {
+            scrollTrigger: {
+                trigger: ".main",
+                start: 'top center',
+                end: 'bottom center',
+                markers: true,
+            },
+            x: 100,
+            duration: 2,
+            ease: Elastic.easeOut.config(1, 0.3)
+        });
+    </script>
 </body>
 </html>
