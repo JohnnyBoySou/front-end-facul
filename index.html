@@ -94,12 +94,14 @@
             </section>
          
             
-            <div class="main">
-                <div class="box"></div>
-            </div>
        
         </div>
+        
     </section>
+    
+    <div class="main">
+        <div class="box"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    
@@ -114,8 +116,9 @@
                 start: 'top center',
                 end: 'bottom center',
                 markers: true,
+                scrub: true,
             },
-            x: 100,
+            x: 500,
             duration: 2,
             ease: Elastic.easeOut.config(1, 0.3)
         });
