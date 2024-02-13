@@ -10,7 +10,13 @@
     
 </head>
 <body>
-    <section class="row">
+    <div class="cursor-follower">
+        <div style="border: 2px solid #191919; padding: 6px;  border-radius: 100px; z-index: 99; ">
+            <div class="ball">
+            </div>
+        </div>
+        </div>
+    <section class="row project">
         <nav class="sidebar">
             <button class="lang">
                 <span class="material-symbols-outlined"> language </span>
@@ -43,9 +49,6 @@
             </footer>
         </nav>
         <div class="content">
-
-
-
 
             <section class="card">
                 <img class="img_poster" src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center" alt="Carro eletrico">
@@ -98,30 +101,38 @@
         </div>
         
     </section>
-    
-    <div class="main">
-        <div class="box"></div>
+   
+
+    <div class="project" style="background-color: #4159DE;">
+        <div class="road">
+            <div class="count">
+                <span id="current_count" class="current_count">1</span>
+                <span style="color: #d2d2d2;">/</span>
+                <span id="total_count">5</span>
+            </div>
+            <div class="row">
+                <div class="col"> 
+                    <h2 class="title">Meu Novo Imóvel</h2>
+                    <p class="subtitle">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+            <img src="https://cdn.dribbble.com/users/3423127/screenshots/16701611/media/f7a5a6501ffe76e6d5b43f39c67895c4.png?resize=1000x750&vertical=center"  class="banner"></img>
+        </div>
+    </div>
+    <div class="project" style="background-color: #596FEF;">
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-   
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
 
-        const box = document.querySelector('.box');
-        const main = document.querySelector('.main');
-        //gsap.registryPlugin(ScrollTrigger);
-        gsap.to(".box", {
-            scrollTrigger: {
-                trigger: ".main",
-                start: 'top center',
-                end: 'bottom center',
-                markers: true,
-                scrub: true,
-            },
-            x: 500,
-            duration: 2,
-            ease: Elastic.easeOut.config(1, 0.3)
-        });
-    </script>
+
+   <script src="./script.js"></script>
+   
 </body>
 </html>

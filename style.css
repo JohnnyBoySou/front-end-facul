@@ -42,6 +42,8 @@
 }
 body{
     background-color: #dfdfdf;
+    padding: 0px; 
+    margin: 0px;
 }
 .headline{
     font-size: 2em;
@@ -65,7 +67,6 @@ body{
     padding: 30px;
     background-color: #eeeeee;
     flex-grow: 1;
-    overflow: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,16 +88,16 @@ body{
     border-radius: 50%;
 }
 /* Styling the scrollbar */
-.content::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;
 }
 
-.content::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: #cbcbcb;
     border-radius: 100px;
 }
 
-.content::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #929292;
     border-radius: 100px;
 }
@@ -119,11 +120,10 @@ span{
     border: 2px solid #404040;
     border-radius: 100px;
     padding: 12px 30px;
-    cursor: pointer;
     margin-top: 20px;
+    cursor: none;
 }
 .contact{
-    cursor: pointer;
     font-size: 1em;
     font-family: 'Medium';
     color: #fff;
@@ -132,6 +132,7 @@ span{
     padding: 12px 30px;
     border-radius: 100px;
     margin: 10px 0px;
+    cursor: none;
 }
 
 li{
@@ -139,7 +140,6 @@ li{
     font-size: 1em;
     font-family: 'Book';
     margin-bottom: 10px;
-    cursor: pointer;
     transition: .3s ease-in-out;
     padding: 10px 0px;
     border-bottom: 2px solid #16161620;
@@ -164,7 +164,6 @@ a{
     z-index: 2;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition:  .4s ease-in-out;
 }
 .lang:hover {
@@ -186,15 +185,73 @@ li:hover .arrow{
 }
 
 
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    user-select: none;
+    pointer-events: none;
+  }
+  .ball{
+    background-color: #586EEF;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+  }
 
-.box{
+.banner{
     border-radius: 12px;
-    width: 240px;
-    height: 240px;
-    background-color: #161616;
+    width: 800px;
+    margin: auto;
+    background-color: #f8f8f8;
+    opacity: 1;
 }
-.main{
-    background-color: red;
-    height: 600px;
+.project{
+    height: 100vh;
     width: 100%;
+}
+.road{
+    padding: 20px 60px;
+}
+
+.title{
+    font-size: 3em;
+    line-height: normal;
+    font-family: 'Bold';
+    margin-top: 20px;
+    color: #f4f4f4;
+}
+.subtitle{
+    font-size: 1.2em;
+    font-family: 'Book';
+    margin-top: -30px;
+    color: #f1f1f1;
+}
+.line{
+    font-size: 1.2em;
+    font-family: 'Book';
+    margin-top: -30px;
+    color: #f1f1f1;
+    opacity: 0;
+}
+.count{
+    border: 2px solid #f1f1f140;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-size: 2em;
+    font-family: 'Book';
+    text-align: center;
+    width: 80px;
+    justify-content: center;
+}
+
+.current_count {
+    font-family: 'Book';
+    color: #f1f1f1;
+}
+
+#total_count {
+    font-family: 'Book';
+    color: #d2d2d2;
 }
